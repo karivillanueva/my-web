@@ -1,35 +1,45 @@
+import Text from '@/components/ui/Text';
+import AboutSection from '@/components/about/AboutSection';
+import AboutList from '@/components/about/AboutList';
+import AboutGrid from '@/components/about/AboutGrid';
+import AboutDotList from '@/components/about/AboutDotList';
+
+import {
+  EXPERIENCE,
+  EDUCATION,
+  TECH_STACK,
+  ABOUT_ME_DETAILS,
+} from '@/utils/constants';
+
 const About = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
-      <section className="max-w-3xl mx-auto">
-        <h1 className="text-4xl font-bold text-gray-900 mb-8">About Us</h1>
+    <div className="max-w-3xl mx-auto px-4 py-12">
+      <header className="mb-10 text-center">
+        <h1 className="text-4xl font-bold mb-2">Karime Villanueva</h1>
+        <h2 className="text-xl text-gray-600">
+          Frontend & Mobile Engineer · Project Manager · Uruguay
+        </h2>
+      </header>
 
-        <div className="space-y-6">
-          <div>
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-              Our Story
-            </h2>
-            <p className="text-gray-600 leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-          </div>
+      <AboutSection title="About Me">
+        <Text text="I’m a Frontend and Mobile Engineer with over 3 years of experience developing applications and 3 years of experience in Project Management. I specialize in building scalable and performant apps using modern tools like React, React Native, Next.js, and Tailwind. With a background in mechanical engineering and software development, I bring analytical thinking, attention to detail, and a strong drive to deliver high-quality digital solutions. I thrive in fast-paced environments, constantly learning, iterating, and leveraging AI tools to optimize the development process." />
+      </AboutSection>
 
-          <div>
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-              Our Mission
-            </h2>
-            <p className="text-gray-600 leading-relaxed">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt mollit
-              anim id est laborum.
-            </p>
-          </div>
-        </div>
-      </section>
+      <AboutSection title="Skills">
+        <AboutGrid elements={TECH_STACK} />
+      </AboutSection>
+
+      <AboutSection title="Experience & Education">
+        <AboutList elements={EXPERIENCE} />
+      </AboutSection>
+
+      <AboutSection title="Education">
+        <AboutList elements={EDUCATION} />
+      </AboutSection>
+
+      <AboutSection title="More About Me">
+        <AboutDotList elements={ABOUT_ME_DETAILS} />
+      </AboutSection>
     </div>
   );
 };

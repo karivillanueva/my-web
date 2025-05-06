@@ -1,5 +1,9 @@
 import Image from 'next/image';
-import { HeroSectionPropTypes } from './HeroSectionPropTypes';
+
+type HeroSectionPropTypes = {
+  handleMouseMove: (e: React.MouseEvent<HTMLDivElement>) => void;
+  progress: number | null;
+};
 
 const HeroSection = ({ handleMouseMove, progress }: HeroSectionPropTypes) => {
   const leftWidth = !progress ? '50%' : `${progress * 100}%`;
