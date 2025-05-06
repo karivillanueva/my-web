@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-
+import Subtitle from '@/components/ui/Subtitle';
 interface BlogCardProps {
   title: string;
   image: string;
@@ -23,7 +23,7 @@ const BlogCard = ({ title, image, link }: BlogCardProps) => {
         className="w-full h-48 object-cover"
       />
       <div className="p-6">
-        <h2 className="mb-2">{title}</h2>
+        <Subtitle subtitle={title} />
       </div>
     </Link>
   );
