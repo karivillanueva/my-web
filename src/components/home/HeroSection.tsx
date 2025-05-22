@@ -1,31 +1,21 @@
 import Image from 'next/image';
 
-type HeroSectionPropTypes = {
-  handleMouseMove: (e: React.MouseEvent<HTMLDivElement>) => void;
-  progress: number | null;
-};
-
-const HeroSection = ({ handleMouseMove, progress }: HeroSectionPropTypes) => {
-  const leftWidth = !progress ? '50%' : `${progress * 100}%`;
-  const rightWidth = !progress ? '50%' : `${(1 - progress) * 100}%`;
-
+const HeroSection = () => {
   return (
-    <div className="relative w-full h-[77%]" onMouseMove={handleMouseMove}>
+    <div className="absolute top-0 left-0 h-[77%] w-full hidden md:block z-0">
       <div className="flex h-full">
-        <div className=" bg-[#16191C]" style={{ width: rightWidth }} />
-        <div className=" bg-[#D2CFC8]" style={{ width: leftWidth }} />
+        <div className="bg-[#16191C] w-[50%]" />
+        <div className="bg-[#D2CFC8] w-[50%]" />
       </div>
 
-      <div className="absolute inset-0 flex w-full items-end">
-        <div className="relative w-full h-full">
-          <Image
-            src="/images/desktop.png"
-            alt="Computer"
-            fill
-            className="object-contain object-bottom"
-            priority
-          />
-        </div>
+      <div className="absolute inset-0 flex w-full h-full items-end">
+        <Image
+          src="/images/desktop.png"
+          alt="Computer"
+          fill
+          className="object-contain object-bottom"
+          priority
+        />
       </div>
     </div>
   );

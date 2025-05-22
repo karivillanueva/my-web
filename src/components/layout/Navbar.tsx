@@ -10,7 +10,7 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="bg-white shadow-lg">
+    <nav className="bg-[#f9f9f9]  shadow-lg">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between h-16">
           <div className="flex-shrink-0 flex items-center">
