@@ -15,14 +15,13 @@ const About = () => {
   return (
     <div className="max-w-3xl mx-auto px-4 py-12">
       <header className="mb-10 text-center">
-        <h1 className="text-4xl font-bold mb-2">Karime Villanueva</h1>
-        <h2 className="text-xl text-gray-600">
-          Frontend & Mobile Engineer · Project Manager · Uruguay
+        <h2 className="text-xl text-gray-700 font-semibold">
+          Software Engineer · Project Manager
         </h2>
       </header>
 
       <AboutSection title="About Me">
-        <Text text="I’m a Frontend and Mobile Engineer with over 3 years of experience developing applications and 3 years of experience in Project Management. I specialize in building scalable and performant apps using modern tools like React, React Native, Next.js, and Tailwind. With a background in mechanical engineering and software development, I bring analytical thinking, attention to detail, and a strong drive to deliver high-quality digital solutions. I thrive in fast-paced environments, constantly learning, iterating, and leveraging AI tools to optimize the development process." />
+        <Text text="I’m a Software Engineer with 4 years of experience developing applications and 3 years of experience in Project Management. I specialize in building scalable and performant apps using modern tools like React, React Native, Next.js, and Tailwind. With a background in mechanical engineering and software development, I bring analytical thinking, attention to detail, and a strong drive to deliver high-quality digital solutions. I thrive in fast-paced environments, constantly learning, iterating, and leveraging AI tools to optimize the development process." />
       </AboutSection>
 
       <AboutSection title="Skills">

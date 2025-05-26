@@ -3,11 +3,13 @@ export const APP_ROUTES = {
   ABOUT: '/about',
   BLOGS: '/blogs',
   CONTACT: '/contact',
+  PROJECTS: '/projects',
 };
 
 export const navItems = [
   { href: APP_ROUTES.HOME, label: 'Home' },
   { href: APP_ROUTES.ABOUT, label: 'About' },
+  { href: APP_ROUTES.PROJECTS, label: 'Projects' },
   { href: APP_ROUTES.BLOGS, label: 'Blogs' },
   { href: APP_ROUTES.CONTACT, label: 'Contact' },
 ];
@@ -21,6 +23,23 @@ export const BLOGS = [
     title: 'What is AI & Machine Learning: How it works & more (2024)',
     image: '/images/ai-post.png',
     link: 'https://loopstudio.dev/what-is-ai-and-machine-learning/',
+  },
+];
+
+export const PROJECTS = [
+  {
+    name: 'Tier4',
+    technologies: ['Next', 'React Native'],
+    challenges: [
+      'Notifications',
+      'Biometrics',
+      'Platform integration',
+      'Dynamic translation',
+      'Graphs and tables',
+    ],
+    web: 'https://www.tier4ai.com/',
+    description:
+      'Cybersecurity project, web and mobile platform where alerts generated with AI are received and can be resolved by the user.',
   },
 ];
 
@@ -44,7 +63,7 @@ export const EXPERIENCE = [
 
 export const EDUCATION = [
   {
-    title: 'Software Engineering',
+    title: 'B.S. in Software Engineering',
     subtitle: 'University of the Republic of Uruguay (2018–2024)',
   },
   {
