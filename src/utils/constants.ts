@@ -5,6 +5,10 @@ export const APP_ROUTES = {
   CONTACT: '/contact',
 };
 
+export const API_ROUTES = {
+  SEND_EMAIL: '/sendEmail',
+};
+
 export const navItems = [
   { href: APP_ROUTES.HOME, label: 'Home' },
   { href: APP_ROUTES.ABOUT, label: 'About' },
@@ -75,3 +79,9 @@ export const ABOUT_ME_DETAILS = [
   'Passionate about UX, accessibility, and clean code.',
   'Big fan of music, travel, and coffee.',
 ];
+
+export enum CALL_STATUS {
+  LOADING = 'loading',
+  SUCCESS = 'success',
+  ERROR = 'error',
+}
