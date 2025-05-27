@@ -5,6 +5,10 @@ export const APP_ROUTES = {
   CONTACT: '/contact',
 };
 
+export const API_ROUTES = {
+  SEND_EMAIL: '/sendEmail',
+};
+
 export const navItems = [
   { href: APP_ROUTES.HOME, label: 'Home' },
   { href: APP_ROUTES.ABOUT, label: 'About' },
