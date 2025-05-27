@@ -34,3 +34,18 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Environment Variables
+
+This project requires the following environment variables to be set in a `.env.local` file at the root of the project:
+
+- `EMAIL_USER`: Your Gmail address that will be used to send emails.
+- `EMAIL_PASS`: The App Password generated from your Google Account.
+
+**How to get a Gmail App Password:**
+
+1.  Go to your Google Account Security settings.
+2.  Ensure 2-Step Verification is enabled.
+3.  Find the "App passwords" section.
+4.  Select "Mail" as the app and your device.
+5.  Generate the password and use it for `EMAIL_PASS`.
