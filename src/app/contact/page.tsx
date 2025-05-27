@@ -5,8 +5,8 @@ import Title from '@/components/ui/Title';
 
 const Contact = () => {
   return (
-    <div className="container mx-auto px-4 py-8 flex flex-col-reverse md:grid md:grid-cols-2 md:gap-8 items-center">
-      <div className="mb-8 md:mb-0">
+    <div className="container mx-auto px-6 py-8 flex flex-col-reverse md:grid md:grid-cols-2 md:gap-8 items-center">
+      <div className="mb-8 mt-6 md:mb-0 md:mt-0">
         <Title title="Contact Me" />
 
         <p className="text-gray-600 mb-8">
