@@ -75,3 +75,9 @@ export const ABOUT_ME_DETAILS = [
   'Passionate about UX, accessibility, and clean code.',
   'Big fan of music, travel, and coffee.',
 ];
+
+export enum CALL_STATUS {
+  LOADING = 'loading',
+  SUCCESS = 'success',
+  ERROR = 'error',
+}
